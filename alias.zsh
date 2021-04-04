@@ -6,3 +6,5 @@ alias ra="ranger"
 alias ls=lsd
 alias ll="lsd -l"
 alias lg="lazygit"
+alias t=tmux
+alias e=exit
