@@ -134,6 +134,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
+	fzf-tab
 	golang
 	zsh-autosuggestions
 	git
@@ -165,8 +166,6 @@ _fix_cursor() {
 }
 precmd_functions+=(_fix_cursor)
 
-#source $ZSH/oh-my-zsh.sh
-#source ~/powerlevel10k/powerlevel10k.zsh-theme
-source /home/codegongbing/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/fzf-tab/fzf-tab.zsh
 source ~/.config/zsh/alias.zsh
 source ~/.config/zsh/export.zsh
