@@ -166,6 +166,6 @@ _fix_cursor() {
 }
 precmd_functions+=(_fix_cursor)
 
-source ~/.config/zsh/fzf-tab/fzf-tab.zsh
+source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
 source ~/.config/zsh/alias.zsh
 source ~/.config/zsh/export.zsh
