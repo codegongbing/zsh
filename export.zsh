@@ -13,3 +13,4 @@ export PATH=$PATH:/usr/local/mysql/bin
 export JAVA_HOME=/usr/lib/jvm/TencentKona-8.0.3-262
 export PATH=${JAVA_HOME}/bin:$PATH
 export CLASSPATH=.:${JAVA_HOME}/lib
+
