@@ -7,3 +7,4 @@ alias ls=lsd
 alias ll="lsd -l"
 alias lg="lazygit"
 alias e=exit
+alias lg=lazygit
