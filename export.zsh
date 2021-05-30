@@ -14,3 +14,9 @@ export JAVA_HOME=/usr/lib/jvm/TencentKona-8.0.3-262
 export PATH=${JAVA_HOME}/bin:$PATH
 export CLASSPATH=.:${JAVA_HOME}/lib
 
+#golang
+export GOROOT=/usr/local/bin/go/
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=$HOME/Project/go
+export PATH=$PATH:$GOPATH/bin
+export GOPROXY=https://goproxy.cn,direct
