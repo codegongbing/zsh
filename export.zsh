@@ -15,7 +15,7 @@ export PATH=${JAVA_HOME}/bin:$PATH
 export CLASSPATH=.:${JAVA_HOME}/lib
 
 #golang
-export GOROOT=/usr/local/bin/go/
+export GOROOT=/usr/local/bin/go
 export PATH=$GOROOT/bin:$PATH
 export GOPATH=$HOME/Project/go
 export PATH=$PATH:$GOPATH/bin
