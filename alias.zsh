@@ -3,8 +3,8 @@ alias c="clear && echo -ne '\e[5 q'"
 alias clear="clear && echo -ne '\e[5 q'"
 alias cl="clear && echo -ne '\e[5 q'"
 alias ra="ranger"
-alias ls=lsd
-alias ll="lsd -l"
+alias ls="exa -F --icons --color-scale"
+alias ll="exa -lgBhmF --icons --git --color-scale --time-style=long-iso"
 alias lg="lazygit"
 alias e=exit
 alias lg=lazygit
