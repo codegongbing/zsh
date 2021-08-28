@@ -14,3 +14,6 @@ alias clang='noti clang'
 alias htop=bpytop
 alias ping=gping
 alias ps=procs
+
+# curlie exa bpytop gping procs lazygit noti fd zoxide the_silver_searcher(ag)
+# ripergrep bat

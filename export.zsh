@@ -3,7 +3,9 @@ export http_proxy="http://127.0.0.1:8889"
 export https_proxy="http://127.0.0.1:8889"
 
 # Nodejs
-export PATH=/usr/local/node-v14.17.0-linux-x64/bin:$PATH
+export NODE_HOME=~/.local/node-v14.17.5-linux-x64
+export PATH=$NODE_HOME/bin:$PATH
+export NODE_PATH=$NODE_HOME/lib/node_modules
 
 export EDITOR='vim'
 

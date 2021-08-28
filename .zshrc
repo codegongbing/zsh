@@ -171,3 +171,6 @@ source ~/.config/zsh/alias.zsh
 source ~/.config/zsh/export.zsh
 source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/fzf.zsh
+
+eval "$(zoxide init zsh)"
+
