@@ -173,4 +173,13 @@ source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/fzf.zsh
 
 eval "$(zoxide init zsh)"
+setopt COMBINING_CHARS
 
+if [[ "$(uname -s)" == "Linux" ]]; then BREW_TYPE="linuxbrew"; else BREW_TYPE="homebrew"; fi
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.bfsu.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.bfsu.edu.cn/git/homebrew/${BREW_TYPE}-core.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.bfsu.edu.cn/${BREW_TYPE}-bottles"
+
+eval "$(jenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
