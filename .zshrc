@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Start configuration added by Zim install {{{
 #
 # User configuration sourced by interactive shells
@@ -6,6 +8,10 @@
 # -----------------
 # Zsh configuration
 # -----------------
+
+if [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
 
 #
 # History
@@ -180,6 +186,34 @@ export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.bfsu.edu.cn/git/homebrew/brew.g
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.bfsu.edu.cn/git/homebrew/${BREW_TYPE}-core.git"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.bfsu.edu.cn/${BREW_TYPE}-bottles"
 
-eval "$(jenv init -)"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+export PNPM_HOME="/Users/codegongbing/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+alias gf=gf
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/codegongbing/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/codegongbing/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/codegongbing/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/codegongbing/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+PROG=goctl source /Users/codegongbing/.goctl/.auto_complete/zsh/goctl_autocomplete
+
+[[ -s "/Users/codegongbing/.gvm/scripts/gvm" ]] && source "/Users/codegongbing/.gvm/scripts/gvm"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+

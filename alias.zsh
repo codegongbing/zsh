@@ -7,14 +7,13 @@ alias ls="exa -F --icons --color-scale"
 alias ll="exa -lgBhmF --icons --git --color-scale --time-style=long-iso"
 alias e=exit
 alias lg=lazygit
-#alias make="noti make"
-#alias tar='noti tar'
-#alias clang='noti clang'
-#alias htop=bpytop
-#alias ping=gping
-#alias ps=procs
 alias bat='bat --theme=gruvbox-dark'
 alias cd=z
+alias y=yarn
+alias yd="yarn dev"
+alias yb="yarn build"
+alias yc="yarn create vite"
+alias s="source ~/.zshrc"
 
 # curlie exa bpytop gping procs lazygit noti fd zoxide the_silver_searcher(ag)
 # ripergrep bat rsync git-delta
