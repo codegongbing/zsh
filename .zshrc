@@ -9,8 +9,16 @@
 # Zsh configuration
 # -----------------
 
-if [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
+# 判断当前软件是否为iterm2
+if [ "$TERM_PROGRAM" = "iTerm.app" ]; then
+  # 判断tmux是否已经启动
+  if [ -z "$TMUX" ]; then
+		# 判断是否为iterm2的第一个窗口
+		if [ "$ITERM_SESSION_ID" = "$ITERM_SESSION_ID" ]; then
+			# 启动tmux
+			tmux attach -t default || tmux new -s default
+		fi
+	fi
 fi
 
 #

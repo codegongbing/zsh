@@ -13,6 +13,7 @@ alias y=yarn
 alias yd="yarn dev"
 alias yb="yarn build"
 alias yc="yarn create vite"
+alias ya="yarn add"
 alias s="source ~/.zshrc"
 
 # curlie exa bpytop gping procs lazygit noti fd zoxide the_silver_searcher(ag)
