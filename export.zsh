@@ -3,6 +3,9 @@ export http_proxy="http://127.0.0.1:7892"
 export https_proxy="http://127.0.0.1:7892"
 export NO_PROXY=localhost,127.0.0.1,::1
 
+# ruby
+export PATH=/usr/local/opt/ruby/bin:$PATH
+
 # Nodejs
 export NODE_HOME=/Users/codegongbing/environment/node-v16.13.2-darwin-x64
 export PATH=$NODE_HOME/bin:$PATH
@@ -20,16 +23,12 @@ PATH=$PATH:$JAVA_HOME/bin
 export PATH JAVA_HOME CLASSPATH
 
 #golang
-export GOROOT=/Users/codegongbing/environment/go1.19
+export GOROOT=/Users/codegongbing/environment/go
 export PATH=$GOROOT/bin:$PATH
 export GOPATH=$HOME/Project/go
 export PATH=$PATH:$GOPATH/bin
 
 export PATH=/Users/codegongbing/environment/tinygo0.26/bin:$PATH
-
-#export PATH=~/environment/go1.18/bin:$PATH
-#export GOPROXY=https://goproxy.cn,direct
-#export GOPROXY=http://mirrors.aliyun.com/goproxy/
 
 #maven
 export MAVEN_HOME=~/environment/apache-maven-3.6.3
@@ -40,17 +39,8 @@ export PATH=/usr/local/Cellar/llvm/13.0.0_1/bin:$PATH
 
 export PATH=~/Jetbrains:$PATH
 
-#mac mysql
-export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
-
-#mac redis 配置文件在/usr/local/etc/redis.conf
-export PATH=/usr/local/opt/redis/bin:$PATH
-
-# tomcat
-export PATH=/usr/local/opt/tomcat@8/bin:$PATH
-
 # flutter2
-export PATH=~/environment/flutter2/bin:$PATH
+#export PATH=~/environment/flutter2/bin:$PATH
 # flutter3
 export PATH=~/environment/flutter3/bin:$PATH
 
@@ -62,9 +52,7 @@ export PATH=~/Library/Huawei/sdk/toolchains:$PATH
 # 安卓设备
 export PATH=~/Library/Android/sdk/emulator:$PATH
 
-#hadoop
-#export HADOOP_HOME=~/environment/hadoop-2.7.7
-#export PATH=$PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/bin
 
 export PATH=$PATH:~/environment/protoc-3/bin
 
@@ -72,6 +60,7 @@ export PATH="/usr/local/opt/binutils/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/binutils/lib"
 export CPPFLAGS="-I/usr/local/opt/binutils/include"
 
+# openocd
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export PATH=/Users/codegongbing/environment/esp8266/xtensa-lx106-elf/bin:$PATH
 export PATH=/Users/codegongbing/environment/openocd-esp32/bin:$PATH
@@ -96,11 +85,6 @@ export PATH=/Users/codegongbing/environment/gcc-arm-none-eabi-10.3-2021.10/bin:$
 
 # esp32
 export PATH=/Users/codegongbing/environment/xtensa-esp32-elf/bin:$PATH
-
-# mongodb
-#export PATH=/Users/codegongbing/environment/mongodb-macos-x86_64-5.0.8/bin:$PATH
-
-export PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
